@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+        
+    <body onload="call()">
+      
+        <div>TODO write content</div>
+        
+        
+        <script>
+   function call()
+   {
+         var xhr=new XMLHttpRequest();
+     xhr.open('POST','http://localhost:8080/School_Servlet/Get_Class',true);
+     xhr.send("{'year':'64','section':'64'}");
+           xhr.onload=function()
+    {     alert("invitato");
+        
+    }
+
+   
+       
+     }
+</script>
+        
+    </body>
+    
+
+</html>
